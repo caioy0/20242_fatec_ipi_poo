@@ -1,5 +1,3 @@
-import math;
-
 public class Personagem{
     String nome;
     int energia = 10;
