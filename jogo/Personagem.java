@@ -6,7 +6,7 @@ public class Personagem{
 
     void cacar(){
         if(energia >= 2){
-            System.out.printf("%s caçando", nome);
+            System.out.printf("%s caçando \n", nome);
             energia -= 2; // energia = energia -2
         }else{
             System.out.printf(
@@ -15,9 +15,10 @@ public class Personagem{
             );
             if(fome<10);
             fome = fome +1; // fome +=1 ou fome++ ou ++fome
-            if (fome <10); fome = fome +1;
+            //if (fome <10); fome = fome +1;
             //sono = sono +1 >10 ? sono : sono +1;
-            sono = sono == 1 ? sono : sono +1;
+            //sono = sono == 1 ? sono : sono +1;
+            sono = Math.min(sono +1, 10);
         }
     }
         
@@ -39,5 +40,12 @@ public class Personagem{
         }else{ 
             System.out.print(nome + " sem sono\n");
         }
+    }
+    public String toString(){
+        //nome: e5, f4, s:8
+        return String.format(
+            "%s: e%d, f%d, s%d",
+            nome, energia, fome, sono
+        );
     }
 }
