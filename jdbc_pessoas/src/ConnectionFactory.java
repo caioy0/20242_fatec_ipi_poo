@@ -10,7 +10,7 @@ public class ConnectionFactory {
     private static final String USER = "postgres";
     //pesquisar pela classe propieties dp pacote java.util
     //assim voce resolve a questao da senha chumbada no codigo
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "12345678";
     // -- Complicado isso
 
     public static Connection conectar() {
