@@ -32,6 +32,7 @@ public class PessoaDAO {
     //by Isabel Santos
   }
 
+  //comando automatizado para execurtar e fechar
   public List <Pessoa> listar() throws Exception{
     var pessoas = new ArrayList<Pessoa>();
     var sql = "SELECT * FROM tb_pessoa";
